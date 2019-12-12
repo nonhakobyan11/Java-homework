@@ -155,7 +155,17 @@ public class Main {
         }
     }
 
-
+    // Problem 12
+    public static void findNumbersPowTwo(){
+        int arr[] ={7, 4, 8, 14, 64, 45};
+        int count = 0;
+        for(int i = 0; i < arr.length; i++ ){
+            if((arr[i] & (arr[i] -1 )) == 0){
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
 
 
     public static void main(String[] args) {
@@ -171,5 +181,6 @@ public class Main {
         System.out.print("Problem 9.2 output: "); bubbleSortDescending();
         System.out.print("Problem 10 output: "); printQuantityOfLetter_a();
         System.out.print("Problem 11 output: "); printYesOrNo();
+        System.out.print("Problem 12 output: "); findNumbersPowTwo();
     }
 }
