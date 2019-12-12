@@ -11,7 +11,17 @@ public class Main {
         System.out.println();
     }
 
+    // Problem 2
+    public static void declareIntArrayWithZeroes(){
+        int[] arr = new int[15] ;
+        for (int i = 0; i < 15; i++){
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
-        declareArrayAndPrintElements();
+        System.out.print("Problem 1 output: "); declareArrayAndPrintElements();
+        System.out.print("Problem 2 output: "); declareIntArrayWithZeroes();
     }
 }
