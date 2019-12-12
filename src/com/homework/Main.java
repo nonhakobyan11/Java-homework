@@ -145,6 +145,18 @@ public class Main {
         System.out.println();
     }
 
+    // Problem 11
+    public static void printYesOrNo(){
+        String str = "The way to get started is to quit talking and start doing.";
+        if (str.indexOf("b") != -1) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+
+
+
 
     public static void main(String[] args) {
         System.out.print("Problem 1 output: "); declareArrayAndPrintElements();
@@ -158,5 +170,6 @@ public class Main {
         System.out.print("Problem 9.1 output: "); bubbleSortAscending();
         System.out.print("Problem 9.2 output: "); bubbleSortDescending();
         System.out.print("Problem 10 output: "); printQuantityOfLetter_a();
+        System.out.print("Problem 11 output: "); printYesOrNo();
     }
 }
