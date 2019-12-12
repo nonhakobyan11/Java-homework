@@ -2,7 +2,7 @@ package com.homework;
 
 public class Main {
 
-    //Problem 1
+    // Problem 1
     public static void declareArrayAndPrintElements(){
         String[] str = {"yellow", "green", "blue", "red", "purple"};
 	    for(int i = 0; i < str.length; i++){
@@ -20,7 +20,7 @@ public class Main {
         System.out.println();
     }
 
-    //Problem 3
+    // Problem 3
     public static void declareIntArrayWithThousandElements() {
         int[] arr = new int[1001];
         //lcnel 1-1000 tverov
@@ -34,9 +34,24 @@ public class Main {
         System.out.println();
     }
 
+    // Problem 4
+    public static void printEvenElOfByteArray() {
+        int j = 0;
+        byte[] bArr = new byte[30] ;
+	    for(int i = -30; i <= 30; i+=2){
+	        if(i == 0)
+	            continue;
+	        bArr[j++] = (byte)i;
+        }
+	    for (int i = 0; i < 30; i++){
+            System.out.print(bArr[i] + " ");
+        }
+    }
+
     public static void main(String[] args) {
         System.out.print("Problem 1 output: "); declareArrayAndPrintElements();
         System.out.print("Problem 2 output: "); declareIntArrayWithZeroes();
         System.out.print("Problem 3 output: "); declareIntArrayWithThousandElements();
+        System.out.print("Problem 4 output: "); printEvenElOfByteArray();
     }
 }
