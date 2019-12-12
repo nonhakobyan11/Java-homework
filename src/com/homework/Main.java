@@ -131,6 +131,20 @@ public class Main {
         System.out.println();
     }
 
+    // Problem 10
+    public static void printQuantityOfLetter_a(){
+        String str = "The way to get started is to quit talking and begin doing.";
+        int count = 0;
+        char l;
+        for(int i = 0; i < str.length(); i++){
+            if(str.charAt(i) == 'a'){
+                count++;
+            }
+        }
+        System.out.print(count);
+        System.out.println();
+    }
+
 
     public static void main(String[] args) {
         System.out.print("Problem 1 output: "); declareArrayAndPrintElements();
@@ -143,5 +157,6 @@ public class Main {
         System.out.print("Problem 8 output: "); printElGreatOrSmallInDoubleArray();
         System.out.print("Problem 9.1 output: "); bubbleSortAscending();
         System.out.print("Problem 9.2 output: "); bubbleSortDescending();
+        System.out.print("Problem 10 output: "); printQuantityOfLetter_a();
     }
 }
