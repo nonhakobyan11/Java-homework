@@ -95,6 +95,43 @@ public class Main {
         System.out.println();
     }
 
+    // Problem 9.1
+    public static void bubbleSortAscending(){
+        double t;
+        double[] numbers = {4.52, 6.7, -5.3, 2.8, -6, -2.1, 0.5};
+        for(int i = numbers.length - 1; i > 0; i--)
+	        for (int j = 0; j < i; j++ ){
+	            if(numbers[j] > numbers[j + 1]){
+	                t = numbers[j];
+	                numbers[j] = numbers[j+1];
+	                numbers[j + 1] = t;
+                }
+            }
+        for (int i = 0; i < numbers.length ; i++){
+            System.out.print(numbers[i] + ", ");
+        }
+        System.out.println();
+    }
+
+    // Problem 9.2
+    public static void bubbleSortDescending(){
+        double t;
+        double[] numbers = {4.52, 6.7, -5.3, 2.8, -6, -2.1, 0.5};
+        for(int i = numbers.length - 1; i > 0; i--)
+            for (int j = 0; j < i; j++ ){
+                if(numbers[j] < numbers[j + 1]){
+                    t = numbers[j];
+                    numbers[j] = numbers[j+1];
+                    numbers[j + 1] = t;
+                }
+            }
+        for (int i = 0; i < numbers.length ; i++){
+            System.out.print(numbers[i] + ", ");
+        }
+        System.out.println();
+    }
+
+
     public static void main(String[] args) {
         System.out.print("Problem 1 output: "); declareArrayAndPrintElements();
         System.out.print("Problem 2 output: "); declareIntArrayWithZeroes();
@@ -104,5 +141,7 @@ public class Main {
         System.out.print("Problem 6 output: "); printElDividedByFiveInIntArray();
         System.out.print("Problem 7 output: "); printElGreaterThenInDoubleArray ();
         System.out.print("Problem 8 output: "); printElGreatOrSmallInDoubleArray();
+        System.out.print("Problem 9.1 output: "); bubbleSortAscending();
+        System.out.print("Problem 9.2 output: "); bubbleSortDescending();
     }
 }
