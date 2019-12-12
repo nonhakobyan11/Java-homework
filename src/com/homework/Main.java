@@ -62,11 +62,24 @@ public class Main {
         System.out.println();
     }
 
+    // Problem 6
+    public static void printElDividedByFiveInIntArray(){
+        int[] arr = {1, 5, 4, -47, 64, 25, 78, 625};
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 5 == 0) {
+                System.out.print(arr[i] + " ");
+            }
+        }
+        System.out.println();
+    }
+
+
     public static void main(String[] args) {
         System.out.print("Problem 1 output: "); declareArrayAndPrintElements();
         System.out.print("Problem 2 output: "); declareIntArrayWithZeroes();
         System.out.print("Problem 3 output: "); declareIntArrayWithThousandElements();
         System.out.print("Problem 4 output: "); printEvenElOfByteArray();
         System.out.print("Problem 5 output: "); printOddElOfShortArray();
+        System.out.print("Problem 6 output: "); printElDividedByFiveInIntArray();
     }
 }
