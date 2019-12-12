@@ -46,6 +46,20 @@ public class Main {
 	    for (int i = 0; i < 30; i++){
             System.out.print(bArr[i] + " ");
         }
+        System.out.println();
+    }
+
+    // Problem 5
+    public static void printOddElOfShortArray() {
+        short[] arr= new short[150];
+        int j = 0;
+        for (short i = 1; i < 300; i += 2) {
+            arr[j++] = i;
+        }
+        for (int i = 0; i < 150; i++){
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
@@ -53,5 +67,6 @@ public class Main {
         System.out.print("Problem 2 output: "); declareIntArrayWithZeroes();
         System.out.print("Problem 3 output: "); declareIntArrayWithThousandElements();
         System.out.print("Problem 4 output: "); printEvenElOfByteArray();
+        System.out.print("Problem 5 output: "); printOddElOfShortArray();
     }
 }
